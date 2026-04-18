@@ -95,7 +95,7 @@ app.post("/api/registro", async (req, res) =>{
 });
 
 app.get("/", (req, res) =>{
-    res.send("Bienvenidos a mi primer API!");
+    res.send("Bienvenidos a mi API!");
 });
 
 app.get("/saludo", verificarToken, async (req, res)=>{
