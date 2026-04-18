@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="hero-image-wrapper animate-fade" style={{ animationDelay: '0.3s' }}>
           <div className="hero-blob"></div>
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80" 
+            src="/img/foto-luis.jpg" 
             alt="Luis Herazo Profile" 
             className="hero-image"
           />
