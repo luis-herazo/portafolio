@@ -16,8 +16,9 @@ const Login = () => {
     setLoading(true);
     setError('');
 
-    try {
-      const response = await fetch('/api/login', {
+    try { 
+      const API_URL = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

@@ -7,7 +7,8 @@ const ProjectGrid = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('/api/proyectos');
+      const API_URL = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${API_URL}/api/proyectos`)
       
       if (!response.ok) {
         throw new Error('Error en la respuesta del servidor');
